@@ -23,7 +23,7 @@ class AppointmentsRepository {
         );
         return findAppointments || null;
     }
-//provider: string, date: Date
+    
     public create({ provider, date }: CreateAppointmentDTO ): Appointment {
         const appointment = new Appointment({ provider, date });
 
